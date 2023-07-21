@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Air Quality Index (AQI) Prediction Result</title>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 30px auto;
+      border-radius: 5px;
+      padding: 20px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      background: linear-gradient(45deg, #00e400, #ffff00, #ff7e00, #ff0000, #99004c, #7e0023);
+      background-size: 600% 100%;
+      animation: gradient 10s ease infinite;
+    }
+
+    @keyframes gradient {
+      0% { background-position: 0% }
+      100% { background-position: 100% }
+    }
+
+    h1 {
+      font-family: 'Pacifico', cursive;
+      font-size: 30px;
+      color: #fff;
+      text-align: center;
+      margin-bottom: 30px;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    }
+
+    p {
+      font-size: 18px;
+      text-align: center;
+      color: #fff;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    }
+
+    .result-text {
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Air Quality Index (AQI) Prediction Result</h1>
+    <p class="result-text">{{ prediction_text }}</p>
+  </div>
+</body>
+</html>
