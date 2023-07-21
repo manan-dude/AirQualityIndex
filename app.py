@@ -41,7 +41,7 @@ def predict():
         # Get AQI category based on AQI value
     aqi_category = get_aqi_category(aqi)
 
-    return render_template('result.html', prediction_text='Air Quality Index (AQI) Category: {} - Prediction: {}'.format(aqi_category, round(prediction[0], 2))
+    return render_template('index.html', prediction_text='Air Quality Index (AQI) Category: {} - Prediction: {}'.format(aqi_category, round(prediction[0], 2))
 )
 
 if __name__ == "__main__":
