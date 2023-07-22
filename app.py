@@ -44,5 +44,4 @@ def predict():
     return render_template('index.html', prediction_text='Air Quality Index (AQI) Category: {} - Prediction: {}'.format(aqi_category, round(prediction[0], 2))
 )
 
-if __name__ == "__main__":
     
